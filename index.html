@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My resume</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+   <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <style>
+      .title {
+        font-family: 'Tangerine', cursive;
+      }
+    </style>--> 
+  </head>
+
+  <body>
+    <br/>
+
+    <article class="post">
+      <h1 class="post-title">Lorem ipsum dolor sit amet lorem</h1>
+      <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quidem placeat voluptatum deserunt consequatur optio eos molestiae aliquid sapiente minus sequi assumenda inventore delectus, voluptatibus eligendi sed, excepturi, quibusdam cupiditate!
+      Sint debitis non porro modi sunt magnam, vero cumque maxime est! Culpa rem ab fugit animi excepturi voluptate, facilis quo aspernatur corrupti porro rerum recusandae reprehenderit est quam officiis? Distinctio.
+      Asperiores optio dolorem quibusdam quod est placeat perferendis. Nostrum, eveniet debitis nulla nihil ut minus ipsum. Excepturi explicabo quos, exercitationem laboriosam consequuntur deserunt voluptatem eos pariatur quidem maxime omnis nemo!
+      Pariatur perferendis temporibus adipisci perspiciatis molestias! Voluptatem necessitatibus quae cum, commodi sapiente at eum officia magni ullam saepe laudantium repellat neque perferendis. Quisquam ipsum veritatis quis consequuntur perspiciatis saepe esse.
+      Nobis libero explicabo cupiditate voluptatem consequatur quidem nisi, quo, recusandae deleniti commodi illo. Ut architecto eos repellat nemo. Aliquam facere aliquid similique, voluptatibus sequi deserunt omnis dolore fugiat nobis cumque?
+      Voluptas voluptates ea ab illum, ratione animi saepe, ipsum ducimus repellendus sunt inventore aspernatur nulla placeat quam voluptatibus nostrum libero. Facere architecto minima pariatur amet cumque voluptatum asperiores. Alias, accusantium.
+      Facere maxime blanditiis corrupti qui dignissimos est consequuntur aliquid animi, quaerat eius excepturi non alias nihil itaque aspernatur illum voluptatibus dolores numquam. Quo necessitatibus eos corporis, qui voluptatem iste aspernatur?
+      Rerum id nihil molestias numquam hic! Quod ad vero provident temporibus nihil accusantium odio reprehenderit? Provident dolorem, quibusdam atque dolore sed consequuntur praesentium suscipit! Maiores aliquid hic veritatis et necessitatibus?
+      Aspernatur, debitis ut! Quam vel magnam itaque. Qui magni dicta, ad fuga itaque illo, dolorum pariatur nisi repellat alias veritatis corporis excepturi cupiditate voluptate fugiat minima ex id suscipit ullam.
+      Voluptas, amet assumenda velit, dolorem consequatur labore neque, cumque et ut dolorum temporibus nulla aliquam adipisci. Aperiam eveniet et cumque doloremque ducimus a mollitia harum, aut, totam, excepturi neque velit. ipsum dolor sit amet consectetur adipisicing elit. Voluptas id eius sunt quas eos accusantium! Pariatur alias reiciendis nesciunt fuga repellat aperiam, omnis eligendi. Ut accusantium ea molestias totam eum harum facere adipisci placeat reiciendis, consequatur aut officia non obcaecati dolor quia laboriosam consequuntur odio, sed sint fuga nam.</p>
+    <button data-open-modal> Открыть модалку</button>
+    </article>
+    <br/>
+
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="modal">
+      <p class="post-text">o cupiditate voluptatem consequatur quidem nisi, quo, recusandae deleniti commodi illo. Ut architecto eos repellat nemo. Aliquam facere aliquid similique, voluptatibus sequi deserunt omnis dolore fugiat nobis cumque?
+        Voluptas volupmquam hic! Quod ad vero provident temporibus nihil accusantium odio reprehenderit? Provident dolorem, quibusdam atque dolore sed consequuntur praesentium suscipit! Maiores aliquid hic veritatis et necessitatibus?
+        Aspernatur, debitis ut! uatur la.</p>
+      <button data-close-modal>Закрыть</button>
+    </div>
+  </div>
+
+  <script>
+    const refs = {
+      openModalBtn: document.querySelector("[data-open-modal]"),
+      closeModalBtn: document.querySelector("[data-close-modal]"),
+      backdrop: document.querySelector("[data-backdrop]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refs.backdrop.classList.toggle("is-hidden");
+    }
+
+    function logBackdropClick() {
+      console.log("Это клик в бекдроп");
+    }
+  </script>
+<br/>
+<br/>
+
+
+
+  </body>
+</html>
